@@ -14,7 +14,7 @@ Permet de simuler un vote à l'Assemblée, choisir quel parti vote pour/contre e
 - **Frondeurs** : simuler un pourcentage de députés votant contre la ligne de leur parti
 - **Vote de confiance** : mode spécial avec règles différentes (majorité relative)
 - **Motion de censure** : simulation avec seuil à la majorité absolue des membres
-
+et peut etre ajouter une navette parlementaire avec le senat ...
 ### Expérience utilisateur
 - Animations lors du changement de vote (les points de l'hémicycle changent de couleur)
 - Tooltip au survol d'un siège avec le nom du groupe
