@@ -1,0 +1,116 @@
+.panneau {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+.panneau-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.panneau-ligne {
+  display: grid;
+  grid-template-columns: 140px 1fr 160px;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+}
+
+.panneau-nom {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.panneau-nom span {
+  font-weight: 400;
+  color: #6b7280;
+  margin-left: 6px;
+}
+
+.panneau-boutons {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-vote {
+  padding: 6px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  background-color: #e5e7eb;
+  color: #374151;
+  transition: all 0.15s;
+}
+
+.btn-vote.actif-pour {
+  background-color: #16a34a;
+  color: white;
+}
+
+.btn-vote.actif-contre {
+  background-color: #dc2626;
+  color: white;
+}
+
+.panneau-abstention {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.panneau-abstention input {
+  flex: 1;
+}
+
+.panneau-abstention span {
+  font-size: 13px;
+  color: #6b7280;
+  min-width: 40px;
+}
+
+/* Résultat */
+.resultat {
+  margin-top: 24px;
+  padding: 24px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.resultat.majorite {
+  background-color: #dcfce7;
+  border: 2px solid #16a34a;
+}
+
+.resultat.echec {
+  background-color: #fee2e2;
+  border: 2px solid #dc2626;
+}
+
+.resultat-titre {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.resultat-chiffres {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  font-size: 15px;
+}
+
+.resultat-chiffres .pour  { color: #16a34a; }
+.resultat-chiffres .contre { color: #dc2626; }
+.resultat-chiffres .abs   { color: #6b7280; }
+
+.resultat-seuil {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #6b7280;
+}
